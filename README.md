@@ -109,11 +109,16 @@ To build and run docker image :
 End with an example of getting some data out of the system or using it
 for a little demo
 
-## Accessing the Applications on local host
+## Accessing the Applications 
+### On local host
+- Express: Access at http://localhost:3000 \
+- Flask: Access at http://localhost:5000 \
+- Spring Boot: Access at http://localhost:8080 \
 
-Express: Access at http://localhost:3000
-Flask: Access at http://localhost:5000
-Spring Boot: Access at http://localhost:8080
+### On cloud 
+- Spring Boot: Access at [http://34.94.35.116/hello](http://34.94.35.116/hello) \
+- Express: Access at [http://34.94.193.46/world](http://34.94.193.46/world) \
+- Flask: Access at [http://34.94.205.204‎](http://34.94.205.204‎)
 
 ## Scaling up/down on GKE
 
