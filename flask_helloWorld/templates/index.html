@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Hello World APIs</h1>
+    <h2>This webpage is part of CMPE 272 assignment.</h2>
+    <p>The first button calls the 'Hello' service.<br>
+    'Hello' service is written on Spring Boot framework and hosted on GKE cluster.</p>
+    <p>The second button calls the 'World' service.<br>
+    'World' service is written in ExpressJS framework and hosted on GKE cluster.</p>
+    <p>The third button calls both services to display combined message.</p>
+    <br>
+
+    <form action="{{ url_for('getHello') }}" method="POST">
+        <button type="submit">Fetch Hello Service</button>
+    </form>
+
+    {% if response1 %}
+        <br>calling 'Hello' service
+        <br>using endpoint : {{ api_url1 }}
+        <br>Results:
+        <h4><pre>{{ response1  }}</pre></h4>
+    {% endif %}
+    <br><br>
+
+
+    <form action="{{ url_for('getWorld') }}" method="POST">
+        <button type="submit">Fetch World Service</button>
+    </form>
+
+    {% if response2 %}
+        <br>calling 'World' service
+        <br>using endpoint : {{ api_url2 }}
+        <br>Results:
+        <h4><pre>{{ response2 }}</pre></h4>
+    {% endif %}
+    <br><br>
+
+    <form action="{{ url_for('getHelloWorld') }}" method="POST">
+        <button type="submit">Fetch 'Hello World'</button>
+    </form>
+
+     {% if response3 %}
+        <br>calling 'World' service
+        <br>using both endpoint :
+        <br>calling endpoint : {{ api_url1 }}
+        <br>calling endpoint : {{ api_url2 }}
+        <br>
+        <h4>Results:</h4>
+        <h3><pre>{{ response3 }}</pre></h3>
+    {% endif %}
+
+</body>
+</html>
