@@ -12,7 +12,7 @@ These application is currently up and running on GKE cluster.
 #### 1. Hello Service: 
 
 This micro-service is written using Java and SpringBoot Frmaework.\
-The service is hosted on following endpoint: [http://34.94.35.116/hello](http://34.94.35.116/hello).
+The service is hosted on following endpoint: [http://34.94.35.116/hello](http://34.94.35.116/hello)
 
 This returns a Json response with message as "Hello".
 
@@ -26,7 +26,7 @@ This returns a Json response with message as "Hello".
 #### 2. World Service:
 
 This micro-service is written using Javascript and ExpressJS Frmaework. \
-The service is hosted on following endpoint: [http://34.94.193.46/world](http://34.94.193.46/world).
+The service is hosted on following endpoint: [http://34.94.193.46/world](http://34.94.193.46/world)
 
 This returns a Json response with message as "World".
 
