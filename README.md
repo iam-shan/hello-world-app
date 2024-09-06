@@ -1,6 +1,12 @@
 # Hello World Microservices Application
 
-This project is a Microservices application consisting of Flask, Express, and Spring Boot components. Each service is containerized using Docker and is deployed on Google Kubernetes Engine (GKE).
+This project is a Microservices application consists of there components,
+
+- ExpressJS module
+- SpringBoot module 
+- Flask module
+  
+Each service is containerized using Docker and is deployed on Google Kubernetes Engine (GKE). \
 The goal of this application is to get familiar with the basic concepts of microservices architecture.\
 These application is currently up and running on GKE cluster. 
 
@@ -16,9 +22,15 @@ The service is hosted on following endpoint: [http://34.94.35.116/hello](http://
 
 This returns a Json response with message as "Hello".
 
+![image](https://github.com/user-attachments/assets/4035e68c-9566-4126-9dcb-7221c83dc6c3)
+
+
     {
       message : "Hello"
     }
+
+
+    
 ###### Based on the usage, cluster pods may have been scaled down to save resources.    
 
 #
@@ -29,6 +41,10 @@ This micro-service is written using **Javascript and ExpressJS** Frmaework. \
 The service is hosted on following endpoint: [http://34.94.193.46/world](http://34.94.193.46/world)
 
 This returns a Json response with message as "World".
+
+![image](https://github.com/user-attachments/assets/8f40b1a2-a640-42a1-81cc-2bf066c4d86e)
+
+
 
     {
       message : "World"
@@ -42,12 +58,23 @@ This webapplication is written using **Python and Flask** Frmaework.\
 This app makes call to other two service endpoint and display message : "Hello World". \
 The web-app is hosted on : [http://34.94.205.204‎](http://34.94.205.204‎)
 
+![image](https://github.com/user-attachments/assets/804b99c1-5ef0-41da-8517-b82d368a952a)
+
+
 ###### Based on the usage, cluster pods may have been scaled down to save resources.
 
 
 
 #
 ## Resources
+
+The App and it's images are hosted on Google Kubernetes Engine and Artifact Registry.
+
+Below is running status of cluster.
+
+![image](https://github.com/user-attachments/assets/79b73fa8-b941-4ab0-a721-12fa2b9b3a22)
+
+
 
 Here are the resources and links for accesing the Docker Images.\ 
 ### This Docker Hub repo has all the latest docker images hosted on GKE
